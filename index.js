@@ -12,7 +12,7 @@ const phTube = async () => {
   categories.forEach((categorie) => {
     const div = document.createElement("div");
     div.innerHTML = `
-            <button  onclick= "allShow('${categorie.category_id}')", sortResult('${categorie.category_id}') class="btn text-base font-medium px-5  w-24">${categorie.category}</button>
+            <button  onclick= "allShow('${categorie.category_id}')", sortResult('${categorie.category_id}') class="btn text-base font-medium px-5 w-24 focus:outline-none focus:bg focus:bg-red-600 focus:text-white">${categorie.category}</button>
          `;
     categoriesSection.appendChild(div);
   });
