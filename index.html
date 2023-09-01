@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+    <!-- daisy & tailwind cdn -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--google font falmily enter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- common css -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+      }
+      .vw {
+        padding: 0px 10vw;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <!-- navbar starts here -->
+
+    <header class="vw mt-10">
+        <div class="flex flex-col gap-3 justify-between lg:flex-row bg-base-100">
+            <div class="lg:flex-1 flex justify-center lg:justify-start">
+              <img src="Logo.png" alt="">
+            </div>
+            <div class="flex justify-between flex-1">
+                <div class="">
+                    <button onclick="sortResult()" class="btn btn-accent normal-case text-lg font-medium">Sort by view</button>
+                  </div>
+                  <div class="">
+                    <a href="blog.html">
+                      <button class="btn btn-ghost bg-red-600 text-lg font-medium text-white ">
+                          Blog
+                        </button>
+                    </a>
+                  </div>
+            </div>
+          </div>
+          <hr class="mt-8">
+    </header>
+       
+    <main>
+        <section class="vw mt-8">
+            <div id="categories-section" class=" grid grid-cols-2 lg:grid-cols-4 gap-5 w-9/12  lg:w-6/12 mx-auto">
+
+            </div>
+
+            <div id="no-result" class=" mt-8 flex flex-col gap-5 justify-center items-center p-20 hidden">
+                <img src="./Icon.png" alt="">
+                <p class="text-4xl font-extrabold text-center">Oops!! Sorry, There is no <br>
+                     content here</p>
+            </div>
+
+            <div id="video-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-11">
+                
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
